@@ -10,6 +10,7 @@ Source1:	http://isdn.jolly.de/download/v2.7/mISDNuser_for_PBX4Linux-2.7-fix1.tar
 # Source0-md5:  146f5f3800545c224abec4108522ea9b
 URL:		http://www.beronet.com/index.php?option=com_remository&Itemid=38&func=selectfolder&cat=1&lang=en
 BuildRequires:	asterisk-devel
+BuildRequires:	mISDN-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
