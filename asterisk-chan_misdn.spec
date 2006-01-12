@@ -1,14 +1,14 @@
 Summary:	Asterisk mISDN channel driver
 Summary(pl):	Sterownik kana³u mISDN dla Asteriska
 Name:		asterisk-chan_misdn
-Version:	0.1.1
+Version:	0.2.1
 Release:	0.1
 License:	GPL
 Group:		Applications
-Source0:	chan_misdn-%{version}.tar.gz
-# Source0-md5:	77a68e82e8f06d610644033f72bfa217
+Source0:	http://www.beronet.com/download/chan_misdn/stable/chan_misdn-%{version}.tar.gz
+# Source0-md5:	0495c0617c4331d19a399702b2f96366
 Source1:	http://isdn.jolly.de/download/v2.7/mISDNuser_for_PBX4Linux-2.7-fix1.tar.gz
-# Source1-md5:  146f5f3800545c224abec4108522ea9b
+# Source1-md5:	146f5f3800545c224abec4108522ea9b
 URL:		http://www.beronet.com/index.php?option=com_remository&Itemid=38&func=selectfolder&cat=1&lang=en
 BuildRequires:	asterisk-devel
 BuildRequires:	mISDN-devel
@@ -23,7 +23,8 @@ Sterownik kana³u mISDN (chan_misdn) dla platformy VOIP o otwartych
 ¼ród³ach Asterisk.
 
 %prep
-%setup -q -n chan_misdn-%{version} -a1
+%setup -q -n chan_misdn -a1
+#-%{version} -a1
 
 sed -i 's/#CFLAGS+=-DASTERISK_STABLE/CFLAGS+=-DASTERISK_STABLE/' Makefile
 sed -i 's/-ggdb//g' Makefile
