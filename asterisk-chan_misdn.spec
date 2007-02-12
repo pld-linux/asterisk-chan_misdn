@@ -1,5 +1,5 @@
 Summary:	Asterisk mISDN channel driver
-Summary(pl.UTF-8):   Sterownik kana<B3>u mISDN dla Asteriska
+Summary(pl.UTF-8):   Sterownik kanału mISDN dla Asteriska
 Name:		asterisk-chan_misdn
 
 %define		_rc rc29
