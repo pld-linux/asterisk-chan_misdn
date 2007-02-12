@@ -1,5 +1,5 @@
 Summary:	Asterisk mISDN channel driver
-Summary(pl):	Sterownik kana<B3>u mISDN dla Asteriska
+Summary(pl.UTF-8):   Sterownik kana<B3>u mISDN dla Asteriska
 Name:		asterisk-chan_misdn
 
 %define		_rc rc29
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 mISDN Channel driver (chan_misdn) for the Asterisk Open Source VOIP
 Platform.
 
-%description -l pl
-Sterownik kana≥u mISDN (chan_misdn) dla platformy VOIP o otwartych
-ºrÛd≥ach Asterisk.
+%description -l pl.UTF-8
+Sterownik kana≈Çu mISDN (chan_misdn) dla platformy VOIP o otwartych
+≈∫r√≥d≈Çach Asterisk.
 
 %prep
 %setup -q -n chan_misdn
