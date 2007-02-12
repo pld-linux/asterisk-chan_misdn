@@ -1,9 +1,8 @@
+# TODO: optflags
 Summary:	Asterisk mISDN channel driver
 Summary(pl.UTF-8):   Sterownik kanału mISDN dla Asteriska
 Name:		asterisk-chan_misdn
-
 %define		_rc rc29
-
 Version:	0.3.1
 Release:	0.%{_rc}.1
 License:	GPL
@@ -31,8 +30,8 @@ sed -i 's/-ggdb//g' Makefile
 
 %build
 %{__make} \
-        CC="%{__cc}" \
-        MISDNUSERLIB=%{_libdir}
+	CC="%{__cc}" \
+	MISDNUSERLIB=%{_libdir}
 
 %install
 rm -rf $RPM_BUILD_ROOT
