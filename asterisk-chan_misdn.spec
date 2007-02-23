@@ -10,8 +10,8 @@ Group:		Applications
 Source0:	http://www.beronet.com/download/chan_misdn/stable/candidates/chan_misdn-%{version}-%{_rc}.tar.gz
 # Source0-md5:	d8c343fdf16378993b6dfbb697a33694
 BuildRequires:	asterisk-devel
-BuildRequires:	mISDN-devel
-BuildRequires:	mISDNuser-devel
+BuildRequires:	mISDN-devel >= 1.1.0
+BuildRequires:	mISDNuser-devel > 1.1.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
