@@ -8,7 +8,7 @@ Release:	0.%{_rc}.1
 License:	GPL
 Group:		Applications
 Source0:	http://www.beronet.com/download/chan_misdn/stable/candidates/chan_misdn-%{version}-%{_rc}.tar.gz
-# Source0-md5:	d8c343fdf16378993b6dfbb697a33694
+# Source0-md5:	871fd786a62857fc8aaae5b5ffc4ae2b
 BuildRequires:	asterisk-devel
 BuildRequires:	mISDN-devel >= 1.1.1
 BuildRequires:	mISDNuser-devel > 1.1.1
