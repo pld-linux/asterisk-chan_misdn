@@ -2,16 +2,16 @@
 Summary:	Asterisk mISDN channel driver
 Summary(pl.UTF-8):	Sterownik kanału mISDN dla Asteriska
 Name:		asterisk-chan_misdn
-%define		_rc rc31
+%define		_rc rc34
 Version:	0.3.1
 Release:	0.%{_rc}.1
 License:	GPL
 Group:		Applications
 Source0:	http://www.beronet.com/download/chan_misdn/stable/candidates/chan_misdn-%{version}-%{_rc}.tar.gz
-# Source0-md5:	0f8934ee1dfdab067e585dbe42ea2281
+# Source0-md5:	be9d0d64ef0f6276e8dd98e41aaf535c
 BuildRequires:	asterisk-devel
-BuildRequires:	mISDN-devel >= 1.1.4
-BuildRequires:	mISDNuser-devel >= 1.1.4
+BuildRequires:	mISDN-devel >= 1.1.5
+BuildRequires:	mISDNuser-devel >= 1.1.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
